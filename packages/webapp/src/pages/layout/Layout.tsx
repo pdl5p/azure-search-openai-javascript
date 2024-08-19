@@ -1,6 +1,6 @@
 import { Outlet, NavLink, Link } from 'react-router-dom';
 
-import github from '../../assets/github.svg';
+//import github from '../../assets/github.svg';
 
 import styles from './Layout.module.css';
 
@@ -10,7 +10,7 @@ const Layout = () => {
       <header className={styles.header}>
         <div className={styles.headerContainer}>
           <Link to="/" className={styles.headerTitleContainer}>
-            <h3 className={styles.headerTitle}>GPT + Enterprise data | Sample</h3>
+            <h3 className={styles.headerTitle}>FindAnswers.ai</h3>
           </Link>
           <nav>
             <ul className={styles.headerNavList}>
@@ -30,7 +30,7 @@ const Layout = () => {
                   Ask a question
                 </NavLink>
               </li>
-              <li className={styles.headerNavLeftMargin}>
+              {/* <li className={styles.headerNavLeftMargin}>
                 <a
                   href="https://aka.ms/azureopenai/javascript"
                   target={'_blank'}
@@ -46,7 +46,7 @@ const Layout = () => {
                     className={styles.githubLogo}
                   />
                 </a>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <h4 className={styles.headerRightText}>Azure OpenAI + AI Search</h4>
